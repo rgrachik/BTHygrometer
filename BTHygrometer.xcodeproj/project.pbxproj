@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279E033F29FDB99500426FEF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E033E29FDB99500426FEF /* Model.swift */; };
 		27D0041029FC356C008A3FD5 /* BTHygrometerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */; };
 		27D0041229FC356C008A3FD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0041129FC356C008A3FD5 /* ContentView.swift */; };
 		27D0041429FC356E008A3FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D0041329FC356E008A3FD5 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		279E033E29FDB99500426FEF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		279E034029FDBC0900426FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		27D0040C29FC356C008A3FD5 /* BTHygrometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTHygrometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTHygrometerApp.swift; sourceTree = "<group>"; };
 		27D0041129FC356C008A3FD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,8 +54,10 @@
 		27D0040E29FC356C008A3FD5 /* BTHygrometer */ = {
 			isa = PBXGroup;
 			children = (
+				279E034029FDBC0900426FEF /* Info.plist */,
 				27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */,
 				27D0041129FC356C008A3FD5 /* ContentView.swift */,
+				279E033E29FDB99500426FEF /* Model.swift */,
 				27D0041329FC356E008A3FD5 /* Assets.xcassets */,
 				27D0041529FC356E008A3FD5 /* Preview Content */,
 			);
@@ -139,6 +144,7 @@
 			files = (
 				27D0041229FC356C008A3FD5 /* ContentView.swift in Sources */,
 				27D0041029FC356C008A3FD5 /* BTHygrometerApp.swift in Sources */,
+				279E033F29FDB99500426FEF /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +276,12 @@
 				DEVELOPMENT_TEAM = 27FU6W5HPT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BTHygrometer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +289,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.rgrachik.BTHygrometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +309,12 @@
 				DEVELOPMENT_TEAM = 27FU6W5HPT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BTHygrometer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +322,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.rgrachik.BTHygrometer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
