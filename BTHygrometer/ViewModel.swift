@@ -9,6 +9,7 @@
 import SwiftUI
 import CoreBluetooth
 import Foundation
+import CoreData
 
 
 let serviceUUID = CBUUID(string: "FFE0")
@@ -20,12 +21,17 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     var characteristic: CBCharacteristic!
     private var timer: Timer?
     
+    
     @Published var temperature: Double = 0
     @Published var pressure: Double = 0
     @Published var humidity: Double = 0
     @Published var altitude: Double = 0
     
+   
+    
     var receivedData = Data()
+    
+    let coreDataManager = CoreDataManager.shared
     
     override init() {
         super.init()
@@ -95,6 +101,17 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                                    self.pressure = pressure
                                    self.humidity = humidity
                                    self.altitude = altitude
+                            
+// Создание экземпляра модели данных
+                            let newData = Parameters(context: self.coreDataManager.context)
+                                           newData.temperature = temperature
+                                           newData.humidity = humidity
+                                           newData.pressure = pressure
+                                           
+// Сохранение контекста CoreData
+                            self.coreDataManager.saveContext()
+                            
+
                                }
                         
                         // Print the values to console
@@ -102,6 +119,9 @@ class BluetoothManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
                         print("Pressure: \(pressure) mm Hg")
                         print("Humidity: \(humidity) %")
                         print("Altitude: \(altitude) meters")
+                        
+                        
+
                         
                     }
                     

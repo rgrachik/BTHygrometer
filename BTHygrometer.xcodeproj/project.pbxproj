@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		279E033F29FDB99500426FEF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E033E29FDB99500426FEF /* Model.swift */; };
+		279E033F29FDB99500426FEF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279E033E29FDB99500426FEF /* ViewModel.swift */; };
+		27BF342A2A18B252003A0DFF /* Parameters.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27BF34282A18B252003A0DFF /* Parameters.xcdatamodeld */; };
+		27BF342C2A18B3EE003A0DFF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF342B2A18B3EE003A0DFF /* CoreDataManager.swift */; };
+		27BF342E2A18C015003A0DFF /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BF342D2A18C015003A0DFF /* DetailsView.swift */; };
 		27D0041029FC356C008A3FD5 /* BTHygrometerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */; };
 		27D0041229FC356C008A3FD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D0041129FC356C008A3FD5 /* ContentView.swift */; };
 		27D0041429FC356E008A3FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D0041329FC356E008A3FD5 /* Assets.xcassets */; };
@@ -15,8 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		279E033E29FDB99500426FEF /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		279E033E29FDB99500426FEF /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		279E034029FDBC0900426FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		27BF34292A18B252003A0DFF /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		27BF342B2A18B3EE003A0DFF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		27BF342D2A18C015003A0DFF /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		27D0040C29FC356C008A3FD5 /* BTHygrometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTHygrometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTHygrometerApp.swift; sourceTree = "<group>"; };
 		27D0041129FC356C008A3FD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,10 +60,13 @@
 		27D0040E29FC356C008A3FD5 /* BTHygrometer */ = {
 			isa = PBXGroup;
 			children = (
-				279E034029FDBC0900426FEF /* Info.plist */,
 				27D0040F29FC356C008A3FD5 /* BTHygrometerApp.swift */,
 				27D0041129FC356C008A3FD5 /* ContentView.swift */,
-				279E033E29FDB99500426FEF /* Model.swift */,
+				27BF342D2A18C015003A0DFF /* DetailsView.swift */,
+				279E033E29FDB99500426FEF /* ViewModel.swift */,
+				27BF342B2A18B3EE003A0DFF /* CoreDataManager.swift */,
+				27BF34282A18B252003A0DFF /* Parameters.xcdatamodeld */,
+				279E034029FDBC0900426FEF /* Info.plist */,
 				27D0041329FC356E008A3FD5 /* Assets.xcassets */,
 				27D0041529FC356E008A3FD5 /* Preview Content */,
 			);
@@ -143,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D0041229FC356C008A3FD5 /* ContentView.swift in Sources */,
+				27BF342A2A18B252003A0DFF /* Parameters.xcdatamodeld in Sources */,
 				27D0041029FC356C008A3FD5 /* BTHygrometerApp.swift in Sources */,
-				279E033F29FDB99500426FEF /* Model.swift in Sources */,
+				27BF342C2A18B3EE003A0DFF /* CoreDataManager.swift in Sources */,
+				279E033F29FDB99500426FEF /* ViewModel.swift in Sources */,
+				27BF342E2A18C015003A0DFF /* DetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27BF34282A18B252003A0DFF /* Parameters.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27BF34292A18B252003A0DFF /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 27BF34292A18B252003A0DFF /* DataModel.xcdatamodel */;
+			path = Parameters.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 27D0040429FC356C008A3FD5 /* Project object */;
 }

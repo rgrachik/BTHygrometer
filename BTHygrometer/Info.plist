@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Bluetooth будет использоваться для подключения к удаленному датчику</string>
+	<string>Bluetooth будет использоваться для подключения к удаленному устройству</string>
 </dict>
 </plist>
